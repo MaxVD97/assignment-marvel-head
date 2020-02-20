@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { padding: 150px;
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-top: 150px;
+        }
+
+        .face {
+            width: 500px;
+            height: 500px;
+            background: green;
+            border: 1px solid black;
+            position: relative;
+            border-radius: 50%;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        .face {cursor: e-resize;
+        }
+        .nose   {width: 20px; height: 20px; background:black;  
+            position: absolute;
+            top: 240px; 
+            left: 240px;
+        }
+        .nose:hover {
+            background: white;
+        }
+
+        .eyeleft {width: 20px; height: 20px; background: black;
+            position: absolute;
+            top: 120px;
+            left: 120px;
+        }  
+        .eyeright {width: 20px; height: 20px; background: black;
+            position: absolute;
+            top: 120px;
+            left: 360px;
+        }
+        .mouth {width: 150px; height: 60px; background: black;
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            right: 50%;
+            border-radius: 50% 50% 0 0;
+            background-color: white;
+            left: 175px;
+            top: 350px;
+            border: .4px solid black;   
+            display: inline-block;
+            transform: rotate(180deg);
+        }
+        .mouth:hover{
+        transform: rotate(0deg);
+    }
+    </style>
+</head>
+<body>
+   <div class="face"> 
+    <div class="eyeleft"></div>
+    <div class="eyeright"></div>
+    <div class="mouth"></div>
+    <div class="nose"></div>
+</body>
+</html>
